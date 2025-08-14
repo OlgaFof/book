@@ -1,0 +1,33 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background: #111;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#app { width: min(95vw, 1200px); }
+.flipbook {
+  width: 100%;
+  height: min(85vh, calc(95vw * 1.41)); /* ориентир на формат A4 */
+  margin: 0 auto;
+}
+.controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+button {
+  padding: .6rem 1rem;
+  border-radius: .75rem;
+  border: 1px solid #444;
+  background: #222;
+  color: #eee;
+  cursor: pointer;
+}
+button:disabled { opacity: .5; cursor: default; }
